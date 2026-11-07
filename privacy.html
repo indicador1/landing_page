@@ -53,7 +53,6 @@
           <li><a href="#finalidades">Para que usamos os dados</a></li>
           <li><a href="#permissoes">Permissões do aparelho</a></li>
           <li><a href="#anuncios">Anúncios e rastreamento</a></li>
-          <li><a href="#compartilhamento">Com quem os dados são compartilhados</a></li>
           <li><a href="#internacional">Transferência internacional</a></li>
           <li><a href="#seguranca">Segurança</a></li>
           <li><a href="#retencao">Por quanto tempo guardamos os dados e como excluí-los</a></li>
@@ -90,10 +89,10 @@
       </ul>
 
       <h3>2.3 Dados de assinatura</h3>
-      <p>Quando a ótica assina o plano Pro, a compra é feita pelo Google Play e a gestão dos direitos da assinatura é feita pelo RevenueCat, que recebe um <strong>identificador aleatório do usuário</strong> e <strong>dados da compra</strong>. Nós <strong>não recebemos nem guardamos dados de cartão</strong>.</p>
+      <p>Quando a ótica assina o plano Pro, a compra é feita pelo Google Play e a gestão dos direitos da assinatura é feita por um serviço terceirizado de gestão de assinaturas, que recebe um <strong>identificador aleatório do usuário</strong> e <strong>dados da compra</strong>. Nós <strong>não recebemos nem guardamos dados de cartão</strong>.</p>
 
       <h3>2.4 Dados de recuperação de senha</h3>
-      <p>Para recuperar a senha, enviamos um código por e-mail. Esse envio é feito pelo Resend, que recebe o e-mail do usuário e o texto da mensagem. O código tem validade de 15 minutos e há limite de tentativas.</p>
+      <p>Para recuperar a senha, enviamos um código por e-mail. Esse envio é feito por um serviço terceirizado de envio de e-mail, que recebe o e-mail do usuário e o texto da mensagem. O código tem validade de 15 minutos e há limite de tentativas.</p>
 
       <h2 id="sensiveis">3. Dados de receita: dados pessoais sensíveis</h2>
       <p>Os dados da receita oftalmológica (grau, eixo, DNP, adição) e as fotos de receita são <strong>dados de saúde</strong>. Pela LGPD, são <strong>dados pessoais sensíveis</strong> e recebem proteção reforçada.</p>
@@ -124,58 +123,10 @@
       <h2 id="anuncios">6. Anúncios e rastreamento</h2>
       <p>O app <strong>não exibe anúncios</strong>, <strong>não usa SDK de analytics ou de publicidade</strong> e <strong>não vende dados</strong>. <!-- REVISAR: confirmar antes de publicar --></p>
 
-      <h2 id="compartilhamento">7. Com quem os dados são compartilhados</h2>
-      <p>Para funcionar, o app usa os provedores abaixo. Eles tratam dados apenas para a finalidade indicada.</p>
-      <div class="tabela-wrap" tabindex="0" role="region" aria-label="Tabela de provedores (role para o lado se necessário)">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Provedor</th>
-              <th scope="col">Para quê</th>
-              <th scope="col">Dados envolvidos</th>
-              <th scope="col">Local</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Neon (PostgreSQL)</th>
-              <td>Banco de dados onde as informações do app são armazenadas.</td>
-              <td>Dados da conta e dados cadastrados pela ótica.</td>
-              <td>São Paulo, Brasil <mark class="preencher">[REVISAR: confirmar a região]</mark><!-- REVISAR: confirmar a região do banco no Neon. --></td>
-            </tr>
-            <tr>
-              <th scope="row"><mark class="preencher">[PREENCHER: provedor da API]</mark><!-- REVISAR: informar o provedor e a região do servidor da API. --></th>
-              <td>Servidor da API do app.</td>
-              <td>Dados trafegados pelo app (conta e dados cadastrados).</td>
-              <td><mark class="preencher">[PREENCHER: região]</mark></td>
-            </tr>
-            <tr>
-              <th scope="row">Resend</th>
-              <td>Envio do e-mail de recuperação de senha.</td>
-              <td>E-mail do usuário e texto da mensagem.</td>
-              <td>Pode ocorrer fora do Brasil <mark class="preencher">[REVISAR]</mark></td>
-            </tr>
-            <tr>
-              <th scope="row">Google Play</th>
-              <td>Cobrança e gestão da assinatura Pro.</td>
-              <td>Dados de pagamento, tratados pelo Google. Não recebemos dados de cartão.</td>
-              <td>Conforme a política do Google.</td>
-            </tr>
-            <tr>
-              <th scope="row">RevenueCat</th>
-              <td>Gestão dos direitos da assinatura Pro.</td>
-              <td>Identificador aleatório do usuário e dados da compra.</td>
-              <td>Pode ocorrer fora do Brasil <mark class="preencher">[REVISAR]</mark></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Não vendemos dados pessoais. Também podemos compartilhar dados quando houver obrigação legal ou ordem de autoridade competente. <!-- REVISAR: confirmar esta frase sobre obrigação legal com assessoria jurídica; não constava dos fatos levantados. --></p>
+      <h2 id="internacional">7. Transferência internacional</h2>
+      <p>Alguns prestadores de serviço que usamos, como os de envio de e-mail e de gestão de assinaturas, podem processar dados fora do Brasil. <mark class="preencher">[REVISAR: confirmar locais de processamento e as salvaguardas adotadas (LGPD arts. 33 a 36)]</mark><!-- REVISAR: confirmar locais de processamento e mecanismo legal da transferência internacional. --></p>
 
-      <h2 id="internacional">8. Transferência internacional</h2>
-      <p>Alguns provedores, como o RevenueCat e o Resend, podem processar dados fora do Brasil. <mark class="preencher">[REVISAR: confirmar locais de processamento e as salvaguardas adotadas (LGPD arts. 33 a 36)]</mark><!-- REVISAR: confirmar locais de processamento e mecanismo legal da transferência internacional. --></p>
-
-      <h2 id="seguranca">9. Segurança</h2>
+      <h2 id="seguranca">8. Segurança</h2>
       <p>Adotamos medidas técnicas para proteger os dados, entre elas:</p>
       <ul>
         <li>conexão criptografada (HTTPS);</li>
@@ -186,16 +137,16 @@
       </ul>
       <p>Nenhum sistema é totalmente imune a falhas, por isso não podemos garantir segurança absoluta. Recomendamos usar uma senha forte e não compartilhá-la.</p>
 
-      <h2 id="retencao">10. Por quanto tempo guardamos os dados e como excluí-los</h2>
+      <h2 id="retencao">9. Por quanto tempo guardamos os dados e como excluí-los</h2>
       <p>Os dados ficam armazenados <strong>enquanto a conta existir</strong>. Ao excluir a conta no app, <strong>todos os dados são apagados imediatamente</strong>. <mark class="preencher">[PREENCHER: prazo de backups do provedor, se houver]</mark><!-- REVISAR: informar se o provedor de banco mantém backups após a exclusão e por quanto tempo. --></p>
       <p>Para excluir:</p>
       <ul>
         <li>no app: <strong>Conta &gt; Zona de perigo &gt; Excluir minha conta</strong>; ou</li>
         <li>pela página <a href="excluir-conta.html">Exclusão de conta</a>, inclusive se você não tiver mais acesso ao app.</li>
       </ul>
-      <p>A exclusão da conta não cancela a assinatura Pro, que deve ser cancelada no Google Play. <mark class="preencher">[REVISAR: informar o que permanece com Google Play e RevenueCat após a exclusão]</mark><!-- REVISAR: confirmar se a exclusão de conta também remove/anonimiza o usuário no RevenueCat e quais dados de compra permanecem. --></p>
+      <p>A exclusão da conta não cancela a assinatura Pro, que deve ser cancelada no Google Play. <mark class="preencher">[REVISAR: informar o que permanece com o Google Play e com o serviço de gestão de assinaturas após a exclusão]</mark><!-- REVISAR: confirmar se a exclusão de conta também remove/anonimiza o usuário no serviço de gestão de assinaturas e quais dados de compra permanecem. --></p>
 
-      <h2 id="direitos">11. Seus direitos (LGPD, art. 18)</h2>
+      <h2 id="direitos">10. Seus direitos (LGPD, art. 18)</h2>
       <p>Você pode solicitar, a qualquer momento:</p>
       <ul>
         <li>confirmação de que tratamos seus dados;</li>
@@ -209,13 +160,13 @@
       <p>Para fazer um pedido, escreva para <a href="mailto:[EMAIL]">[EMAIL]</a>. <mark class="preencher">[PREENCHER: prazo de resposta aos pedidos]</mark></p>
       <p><strong>Se você é cliente de uma ótica</strong> e seus dados foram cadastrados no Visão, a controladora dos seus dados é a ótica. Procure a ótica para exercer seus direitos. Se preferir, escreva para nós e orientaremos você ou encaminharemos o pedido à ótica. <!-- REVISAR: confirmar se esse é o procedimento que você quer adotar para titulares que são clientes das óticas. --></p>
 
-      <h2 id="criancas">12. Crianças e adolescentes</h2>
+      <h2 id="criancas">11. Crianças e adolescentes</h2>
       <p>O app é voltado a profissionais e <strong>não é destinado a menores de 18 anos</strong>.</p>
 
-      <h2 id="alteracoes">13. Alterações nesta política</h2>
+      <h2 id="alteracoes">12. Alterações nesta política</h2>
       <p>Podemos atualizar esta política. A data da última atualização aparece no início da página. <mark class="preencher">[PREENCHER: como os usuários serão avisados de mudanças relevantes, ex.: aviso no app ou por e-mail]</mark><!-- REVISAR: definir a forma de comunicar alterações relevantes. --></p>
 
-      <h2 id="contato">14. Contato e encarregado (DPO)</h2>
+      <h2 id="contato">13. Contato e encarregado (DPO)</h2>
       <p>Para dúvidas sobre esta política ou sobre seus dados pessoais, fale com o nosso contato de privacidade:</p>
       <p><a href="mailto:[EMAIL]">[EMAIL]</a><br>
       <mark class="preencher">[PREENCHER: nome do encarregado (DPO), se aplicável]</mark><!-- REVISAR: informar o nome do encarregado, se houver, conforme LGPD art. 41. --></p>
