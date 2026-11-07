@@ -18,8 +18,6 @@
   --texto: #14211e;
   --texto-suave: #4a5b57;
   --borda: #dbe5e2;
-  --destaque-preencher: #fff2b3;
-  --texto-preencher: #4a3b00;
 
   --raio: 14px;
   --sombra: 0 1px 2px rgba(20, 33, 30, 0.06), 0 6px 20px rgba(20, 33, 30, 0.05);
@@ -43,8 +41,6 @@
     --texto: #e6efec;
     --texto-suave: #a9bab5;
     --borda: #263632;
-    --destaque-preencher: #4a3d00;
-    --texto-preencher: #ffe9a0;
 
     --sombra: 0 1px 2px rgba(0, 0, 0, 0.4);
   }
@@ -171,14 +167,6 @@ a:hover {
 
 .container--texto {
   max-width: var(--largura-texto);
-}
-
-/* Marcadores de campos a preencher (remova ao finalizar) */
-mark.preencher {
-  background: var(--destaque-preencher);
-  color: var(--texto-preencher);
-  padding: 0 0.25em;
-  border-radius: 4px;
 }
 
 /* ---------- Cabeçalho ---------- */

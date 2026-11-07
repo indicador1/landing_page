@@ -6,10 +6,10 @@ Páginas: `index.html`, `privacy.html`, `termos.html`, `excluir-conta.html` e `4
 
 ## Antes de publicar
 
-Procure e substitua os campos pendentes:
+Procure o que ainda precisa ser ajustado (o link do Google Play e as anotações `REVISAR` nos comentários do HTML):
 
 ```bash
-grep -rnE "\[(PREENCHER|DATA|REVISAR|URL DO GOOGLE PLAY)" *.html
+grep -rn "URL DO GOOGLE PLAY" *.html
 grep -rn "REVISAR" *.html
 ```
 
