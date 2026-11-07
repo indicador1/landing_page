@@ -15,6 +15,16 @@ grep -rn "REVISAR" *.html
 
 Também troque `img/icone-visao.png` pelo ícone real do app (a imagem atual é um placeholder).
 
+## Ver o site no seu computador
+
+Dentro desta pasta, rode:
+
+```bash
+python3 -m http.server 8000
+```
+
+Depois abra <http://localhost:8000/>. Deixe o terminal aberto enquanto estiver testando; ao fechá-lo, o endereço deixa de funcionar. Também dá para abrir o `index.html` direto no navegador.
+
 ## Publicar no GitHub Pages
 
 1. Crie um repositório vazio no GitHub (por exemplo `site-desenvolvedor`), sem README.
