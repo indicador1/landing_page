@@ -6,11 +6,10 @@ Páginas: `index.html`, `privacy.html`, `termos.html`, `excluir-conta.html` e `4
 
 ## Antes de publicar
 
-Procure o que ainda precisa ser ajustado (o link do Google Play e as anotações `REVISAR` nos comentários do HTML):
+Procure o que ainda precisa ser ajustado (o link do Google Play):
 
 ```bash
 grep -rn "URL DO GOOGLE PLAY" *.html
-grep -rn "REVISAR" *.html
 ```
 
 Também troque `img/icone-visao.png` pelo ícone real do app (a imagem atual é um placeholder).
