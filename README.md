@@ -42,7 +42,7 @@ O repositório é <https://github.com/indicador1/landing_page>.
 
 Com domínio próprio, o `/landing_page` some das URLs. O melhor é usar um **subdomínio** (por exemplo `visao.seudominio.com.br`).
 
-1. O arquivo `CNAME` (sem extensão) já está na raiz do projeto com `page.estrategico.com.br`. Se mudar o domínio, edite esse arquivo, faça commit e push.
+1. O arquivo `CNAME` (sem extensão) já está na raiz do projeto com `page.estrategico.tec.br`. Se mudar o domínio, edite esse arquivo, faça commit e push.
 2. No painel de DNS do seu domínio (para `.br`, em registro.br ou no provedor de DNS), crie:
    - **Subdomínio:** registro `CNAME`, nome `visao`, valor `indicador1.github.io`.
    - **Domínio raiz (sem subdomínio):** quatro registros `A` com `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`.
@@ -61,14 +61,14 @@ Sem domínio próprio:
 | Termos de uso | `https://indicador1.github.io/landing_page/termos.html` |
 | Exclusão de conta | `https://indicador1.github.io/landing_page/excluir-conta.html` |
 
-Com o domínio próprio `page.estrategico.com.br` (arquivo `CNAME` já incluído):
+Com o domínio próprio `page.estrategico.tec.br` (arquivo `CNAME` já incluído):
 
 | Campo no Google Play Console | URL |
 | --- | --- |
-| Site do desenvolvedor | `https://page.estrategico.com.br/` |
-| Política de privacidade | `https://page.estrategico.com.br/privacy.html` |
-| Termos de uso | `https://page.estrategico.com.br/termos.html` |
-| Exclusão de conta | `https://page.estrategico.com.br/excluir-conta.html` |
+| Site do desenvolvedor | `https://page.estrategico.tec.br/` |
+| Política de privacidade | `https://page.estrategico.tec.br/privacy.html` |
+| Termos de uso | `https://page.estrategico.tec.br/termos.html` |
+| Exclusão de conta | `https://page.estrategico.tec.br/excluir-conta.html` |
 
 ## Adicionar um novo app
 
